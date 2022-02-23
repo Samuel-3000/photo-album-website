@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+<style>
+
+
+.navvy {
+  box-shadow: 0px 0px 40px 5px #0ff;
+}
+.navvy2{
+  box-shadow: 0px 0px 40px 20px #0ff;
+}
+.navvy3 {
+  box-shadow: 0px 0px 10px 5px rgb(0, 255, 85);
+}
+
+/* form {
+margin: 0 auto; 
+width:250px;
+
+} */
+h2 {
+    text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgb(108, 156, 204), rgb(50, 169, 238));
+}
+
+</style>
+
+<script>
+    function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "" || x.length<6) {
+    alert("Username must be entered and must be at least 6 characters");
+    return false;
+  }
+}
+function validateForm2() {
+  let x = document.forms["myForm"]["fname2"].value;
+  if (x == "") {
+    alert("Enter image title.");
+    return false;
+  }
+}
+function validateForm3() {
+  let x = document.forms["myForm"]["fname3"].value;
+  if (x == "") {
+    alert("Enter a comment");
+    return false;
+  }
+}
+</script>
+
+</head>
+<body>
+
+
+    <div class="container-fluid py-4">
+        <nav class="navbar navbar-dark ">
+          <div class="container-fluid">
+            <span class="navbar-text">
+              
+              <a href="index.html"><button class="btn navvy w3-padding-large w3-deep-purple w3-margin btn-success w3-hover-cyan w3-card-4">Home</button></a>
+              <a href="catalog.html"><button class="btn navvy w3-margin w3-padding-large w3-deep-purple btn-success w3-hover-cyan w3-card-4">Catalog</button></a>
+              <!-- <a href="feedback.html"><button class="btn navvy w3-padding-large w3-margin w3-deep-purple btn-success w3-hover-cyan w3-card-4">Feedback</button></a> -->
+            </span>
+          </div>
+        </nav>
+      </div>
+    
+    <!-- <form action="/action_page.php"> -->
+        <div class="container w3-margin">
+    <!-- <form>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button> -->
+      
+      <!-- <label for="comment" class="form-control-plaintext">Comment</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+      <br>
+      <br> -->
+      <h2 class="btn w3-aqua navvy  w3-round-large w3-margin w3-padding-large">Enter feedback below:</h2>
+      <br>
+      <br>
+
+      <form name="myForm" onsubmit="return validateForm(), validateForm2(), validateForm3()" method="post">
+          
+      <input type="text" name="fname" class="form-control-plaintext w3-card-4 w3-aqua navvy w3-hover-light-blue w3-round w3-margin" placeholder="Username">
+      <br>
+      <br>
+      <input type="text" name="fname2" class="form-control-plaintext w3-card-4 w3-aqua w3-hover-light-blue navvy w3-round w3-margin" placeholder="Image Title">
+      <br>
+      <br>
+      <div class="">
+      <input type="text" name="fname3" class="form-control-plaintext w3-card-4 w3-aqua w3-hover-light-blue navvy w3-round  w3-margin" placeholder="Comment">
+      </div>
+      <br>
+      <br>
+      <button type="submit" value="Submit" class="btn w3-card-4 w3-aqua w3-hover-pink navvy3 w3-round  w3-margin">Submit</button>
+      </form>
+      <!-- <label for="comment" class="form-control-plaintext"></label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea> -->
+      <!-- <br>
+      <br>
+      <input type="text" class="form-control-plaintext" placeholder="Plaintext input">
+      <br>
+      <br>
+      <input type="text" class="form-control" placeholder="Normal input"> -->
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+</body>
+</html>
