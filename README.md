@@ -1,5 +1,5 @@
-# photo-album-website
-photography website project for RoboGarden Bootcamp
+# gaming-album-website
+gaming photo website project for RoboGarden Bootcamp
 
 
 Hello,
